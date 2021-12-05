@@ -20,7 +20,7 @@ header {
   margin-top: 3vh;
   padding: 0;
 
-  p > a { color: deepskyblue;}
+  a { color: deepskyblue;}
 
   a:hover {color: white; }
 
@@ -29,16 +29,15 @@ header {
   p { font-family: 'Baloo Bhai 2', cursive;}
 }
 
-.options {
+nav > ul {
   margin-bottom: 50vh;
   width: 39vw;
   margin-left: 28.5vw;
-  padding-left: 2vw;
+  padding: 0;
 
 
-  div {
+  li {
     display: inline-flex;
-    padding: 1vw;
     margin-right: 3vw;
     border: thin solid white;
     border-radius: 45px;
@@ -49,7 +48,8 @@ header {
     }
   }
 
-  p a {
+  a {
+    padding: 1vw;
     color: deepskyblue;
     text-decoration: none;
   }

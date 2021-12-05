@@ -13,14 +13,16 @@ function App() {
                 {opening}
                 <p>{introduction}</p>
             </header>
-            <div className="options">
-                <div aria-label="Jordan's Github Profile" className="github">
-                    <a href="https://github.com/jaytoven527">Check out my Github!</a>
-                </div>
-                <div aria-label="Jordan's Linkedin Profile" className="linkedin">
-                    <a href="https://www.linkedin.com/in/jordan-norwood-a971b8186/">Hire me.</a>
-                </div>
-            </div>
+            <nav>
+                <ul>
+                    <li aria-label="Jordan's Github Profile" className="github">
+                        <a href="https://github.com/jaytoven527">Check out my Github!</a>
+                    </li>
+                    <li aria-label="Jordan's Linkedin Profile" className="linkedin">
+                        <a href="https://www.linkedin.com/in/jordan-norwood-a971b8186/">Hire me.</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     );
 }
