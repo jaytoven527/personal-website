@@ -11,7 +11,7 @@ function App() {
         <div className="app">
             <header>
                 {opening}
-                <p>{introduction}</p>
+                <p className="intro">{introduction}</p>
             </header>
             <nav>
                 <ul>
