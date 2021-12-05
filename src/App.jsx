@@ -14,6 +14,7 @@ function App() {
                 <hr />
                 <p>{introduction}</p>
                 <hr />
+                <p className="intro">{introduction}</p>
             </header>
             <nav>
                 <ul>
