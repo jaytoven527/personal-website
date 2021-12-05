@@ -17,7 +17,7 @@
 }
 
 .App {
-    background-color: #444444;
+    background-image: linear-gradient(to bottom right, black, darkslategrey);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,8 @@ padding-left: 2vw;
 padding: 1vw;
 margin-right: 3vw;
 border: thin solid white; 
-border-radius: 45px;}
+border-radius: 45px;
+transition: background .35s;}
 
 .Options div:hover {
     background-color: whitesmoke;
@@ -60,6 +61,15 @@ border-radius: 45px;}
 
 .Options p a { color: deepskyblue;
 text-decoration: none;}
+
+@media screen and (max-width: 480px) {
+    .Options div {
+        margin-top: 2vh;
+    }
+    
+    .Options div:active { background-color: whitesmoke;}
+
+}
 
 
 
