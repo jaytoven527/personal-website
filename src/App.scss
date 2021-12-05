@@ -49,12 +49,18 @@ padding-left: 2vw;
 }
 
 .Options div {display: inline-flex;
-padding-right: 0vw;
+padding: 1vw;
 margin-right: 3vw;
+border: thin solid white; 
+border-radius: 45px;}
+
+.Options div:hover {
+    background-color: whitesmoke;
 }
 
 .Options p a { color: deepskyblue;
 text-decoration: none;}
 
-.Options div:hover { border-bottom: medium solid white;}
+
+
 
