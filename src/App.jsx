@@ -11,7 +11,9 @@ function App() {
         <div className="app">
             <header>
                 {opening}
+                <hr />
                 <p>{introduction}</p>
+                <hr />
             </header>
             <nav>
                 <ul>
