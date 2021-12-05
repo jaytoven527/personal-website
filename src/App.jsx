@@ -14,15 +14,11 @@ function App() {
                 <p>{introduction}</p>
             </header>
             <div className="options">
-                <div className="github">
-                    <p aria-label="Jordan's Github Profile">
-                        <a href="https://github.com/jaytoven527">Check out my Github!</a>
-                    </p>
+                <div aria-label="Jordan's Github Profile" className="github">
+                    <a href="https://github.com/jaytoven527">Check out my Github!</a>
                 </div>
-                <div className="linkedin">
-                    <p aria-label="Jordan's Linkedin Profile">
-                        <a href="https://www.linkedin.com/in/jordan-norwood-a971b8186/">Hire me.</a>
-                    </p>
+                <div aria-label="Jordan's Linkedin Profile" className="linkedin">
+                    <a href="https://www.linkedin.com/in/jordan-norwood-a971b8186/">Hire me.</a>
                 </div>
             </div>
         </div>
