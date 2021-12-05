@@ -1,75 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=DotGothic16&display=swap');
 
 
-.App {
-    text-align: center;
+.app {
+  text-align: center;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+.app {
+  background-image: linear-gradient(to bottom right, black, darkslategrey);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: deepskyblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+header {
+  width: 39vw;
+  margin-left: 30vw;
+  margin-top: 3vh;
+  padding: 0;
+
+  p > a { color: deepskyblue;}
+
+  a:hover {color: white; }
+
+  h1 { font-family: 'Baloo Bhai 2', cursive;}
+
+  p { font-family: 'Baloo Bhai 2', cursive;}
+}
+
+.options {
+  margin-bottom: 50vh;
+  width: 39vw;
+  margin-left: 28.5vw;
+  padding-left: 2vw;
+
+
+  div {
+    display: inline-flex;
+    padding: 1vw;
+    margin-right: 3vw;
+    border: thin solid white;
+    border-radius: 45px;
+    transition: background .35s;
+
+    &:hover {
+      background-color: whitesmoke;
     }
-}
+  }
 
-.App {
-    background-image: linear-gradient(to bottom right, black, darkslategrey);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-size: calc(10px + 2vmin);
+  p a {
     color: deepskyblue;
-}
+    text-decoration: none;
+  }
 
-.App-opener {
-    width: 39vw;
-    margin-left: 30vw;
-    margin-top: 3vh;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0vh;
-}
+  @media screen and (max-width: 480px) {
+    div {
+      margin-top: 2vh;
 
-.App-opener p > a { color: deepskyblue;}
-
-.App-opener a:hover {color: white; }
-
-.App-opener h1 { font-family: 'Baloo Bhai 2', cursive;}
-
-.App-opener p { font-family: 'Baloo Bhai 2', cursive;}
-
-.Options {margin-bottom: 50vh;
-width: 39vw;
-margin-left: 28.5vw;
-padding-left: 2vw;
-}
-
-.Options div {display: inline-flex;
-padding: 1vw;
-margin-right: 3vw;
-border: thin solid white; 
-border-radius: 45px;
-transition: background .35s;}
-
-.Options div:hover {
-    background-color: whitesmoke;
-}
-
-.Options p a { color: deepskyblue;
-text-decoration: none;}
-
-@media screen and (max-width: 480px) {
-    .Options div {
-        margin-top: 2vh;
+      &:active { background-color: whitesmoke;}
     }
-    
-    .Options div:active { background-color: whitesmoke;}
-
+  }
 }
+
 
 
 

@@ -8,20 +8,18 @@ const introduction = "My name is Jordan and welcome to my website! I  am a Front
 
 function App() {
     return (
-        <div className="App">
-            <div className="App-opener">
+        <div className="app">
+            <header>
                 {opening}
-                <hr/>
                 <p>{introduction}</p>
-                <hr/>
-            </div>
-            <div className="Options">
-                <div className="Github">
+            </header>
+            <div className="options">
+                <div className="github">
                     <p title="Jordan's Github Profile">
                         <a href="https://github.com/jaytoven527">Check out my Github!</a>
                     </p>
                 </div>
-                <div className="Linkedin">
+                <div className="linkedin">
                     <p title="Jordan's Linkedin Profile">
                         <a href="https://www.linkedin.com/in/jordan-norwood-a971b8186/">Hire me.</a>
                     </p>
