@@ -1,12 +1,13 @@
 import './App.scss';
 import React from 'react'
+import { Outlet, Link } from "react-router-dom";
 
 
-const opening      = (<h1>Hello, visitor!</h1>);
-const introduction = "My name is Jordan and welcome to my website! I  am a Front End Engineer with a background in PHP, MySQL, JavaScript, CSS, and HTML. Feel free to check out the options below:"
+ const opening      = (<h1>Hello, visitor!</h1>);
+ const introduction = "My name is Jordan and welcome to my website! I  am a Front End Engineer with a background in PHP, MySQL, JavaScript, CSS, and HTML. Feel free to check out the options below:"
 
 
-function App() {
+function Homepage () {
     return (
         <div className="app">
             <header>
@@ -23,10 +24,16 @@ function App() {
                     <li aria-label="Jordan's Linkedin Profile" className="linkedin">
                         <a href="https://www.linkedin.com/in/jordan-norwood-a971b8186/">Hire me.</a>
                     </li>
+                    <li>
+                         <Link to="/About">About Me</Link>
+                    </li>
                 </ul>
             </nav>
+            <Outlet />
         </div>
-    );
-}
+        );
+    }
 
-export default App;
+export default Homepage;
+
+
