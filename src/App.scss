@@ -68,11 +68,33 @@ nav {
     text-decoration: none;
   }
 
+  @media screen and (max-width: 640px) {
+
+    li:last-child {
+      margin-right: 4vw;
+    }
+    
+  }
+
+  @media screen and (min-width: 641px) {
+
+    li:last-child {
+      margin-right: 4vw;
+    }
+  }
+
   @media screen and (max-width: 480px) {
     div {
       margin-top: 2vh;
 
       &:active { background-color: whitesmoke;}
     }
+  }
+  @media screen and (max-width: 281px) {
+
+    .github {
+      margin-left: 4.4vw;
+    }
+    
   }
 }
