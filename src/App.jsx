@@ -10,9 +10,7 @@ import { Outlet, Link } from "react-router-dom";
         <div className="app">
             <header>
                 {opening}
-                <hr />
-                <p>{introduction}</p>
-                <hr />
+                <p className="intro">{introduction}</p>
             </header>
             <nav>
                 <ul>

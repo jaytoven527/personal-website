@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=DotGothic16&display=swap');
 
-
+// Main App styles
 .app {
   text-align: center;
   background-image: linear-gradient(to bottom right, black, darkslategrey);
@@ -9,30 +9,36 @@
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: deepskyblue;
-}
 
-header {
-  width: 39vw;
-  margin-left: 30vw;
-  margin-top: 3vh;
-  padding: 0;
-  font-family: 'Baloo Bhai 2', cursive;
+  > header {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
 
-  > .intro {
-    border-top: thin solid #fff;
-    border-bottom: thin solid #fff;
-  }
+    p {
+      padding: .9em;
+    }
 
-  a {
-    color: deepskyblue;
-    padding: 2rem;
+    a {
+      color: deepskyblue;
+      padding: 2rem;
 
-    &:hover {
-      color: white;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
+p.intro {
+  border-top: thin solid #fff;
+  border-bottom: thin solid #fff;
+}
 
+
+// Navigation
 nav {
   > ul {
     margin-bottom: 50vh;
@@ -44,8 +50,6 @@ nav {
   li {
     display: inline-flex;
     margin: 1rem;
-    border: thin solid white;
-    border-radius: 45px;
     transition: background .3s;
 
     &:first-child {
@@ -54,47 +58,29 @@ nav {
 
     &:last-child {
       margin-bottom: 0;
-      margin-left: 4vw;
     }
+}
 
-    &:hover {
-      background-color: whitesmoke;
-    }
-  }
-
-  a {
-    padding: 1rem;
-    color: deepskyblue;
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 640px) {
-
-    li:last-child {
-      margin-right: 4vw;
-    }
-    
-  }
-
-  @media screen and (min-width: 641px) {
-
-    li:last-child {
-      margin-right: 4vw;
-    }
-  }
-
+div {
   @media screen and (max-width: 480px) {
-    div {
       margin-top: 2vh;
-
       &:active { background-color: whitesmoke;}
-    }
   }
-  @media screen and (max-width: 281px) {
+}
 
-    .github {
-      margin-left: 4.4vw;
-    }
-    
+// General Styles
+a {
+  color: deepskyblue;
+  text-decoration: none;
+  border-radius: 40px;
+  border: thin solid white;
+  padding: 1rem;
+  transition: background .3s;
+  &:hover {
+    background-color: whitesmoke;
   }
+  @media screen and (max-width: 750px) {
+      font-size: 75%;
+  }
+}
 }

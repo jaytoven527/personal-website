@@ -8,6 +8,7 @@ import {
 import './index.css';
 import Homepage from './App';
 import About from './components/About-me/About-me'
+import Summary, {Work, Tech} from './components/Main/main';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -15,6 +16,9 @@ ReactDOM.render(
   <Routes>
     <Route path="/" element={<Homepage />} />
     <Route path="About" element={<About />} />
+    <Route path="Sum" element={<Summary />} />
+    <Route path="Work" element={<Work />} />
+    <Route path="Tech" element={<Tech />} />
   </Routes>
   </BrowserRouter>,
   document.getElementById('root')

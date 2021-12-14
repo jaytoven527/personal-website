@@ -1,4 +1,4 @@
-.About {
+.about {
     text-align: center;
     background-image: linear-gradient(to bottom right, black, darkslategrey);
     min-height: 100vh;
@@ -6,70 +6,31 @@
     flex-direction: column;
     font-size: calc(10px + 2vmin);
     color: deepskyblue;
+}
+
+
+.pages {
+  > .options {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; 
+    flex-direction: column;   
+  }
+    
+    
+ 
+    a {
+      display: inline-block;
+      width: 100%;
+    }
   }
 
-.Pages {
-    > .Options {
-      margin-top: 20vh;
-      width: 39vw;
-      margin-left: 29.75vw;
+  @media screen and (max-width: 320px) {
 
-      
-    }
-  
-    .Links {
-      display: block;
-      margin: 1.75rem;
-      border: thin solid white;
-      border-radius: 45px;
-      transition: background .3s;
-      padding: 1.5rem;
-      
-  
-      &:first-child {
-        margin-top: 0;
-      }
-  
-      &:last-child {
-        margin-bottom: 0;
-        margin-left: 2.25vw;
-      }
-      
-      &:hover {
-        background-color: whitesmoke;
-      }
-
-          
-    }
-
-    a {
-        color: deepskyblue;
-        text-decoration: none;
-    }
-
-    .Sum {
-        padding-right: 4vw;
-    }
-
-    .Work {
-        padding-right: 3vw;
-    }
-
-    .Home {
-        padding-right: 4.5vw;
-    }
-}
-
-@media screen and (max-width: 750px) {
-
-    
-    a {
-        font-size: 75%;
+    li {
+      margin-left: auto;
+      margin-right: auto;
     }
     
-
-    
-    
-}
-
-
+  }

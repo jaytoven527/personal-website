@@ -1,5 +1,5 @@
 import './About-me.scss';
-import { Link } from "react-router-dom";
+import { outlet, Link, Outlet } from "react-router-dom";
 
 export default function About () {
     const navOptions = {
@@ -9,15 +9,16 @@ export default function About () {
         tech: "Technologies I know"
      };
          return (
-        <div className="About">
-            <nav className="Pages"> 
-                <ul className="Options">
-                    <li className="Links"><Link to="/" className="Home">{navOptions.home}</Link></li>
-                    <li className="Links"><a className="Sum">{navOptions.sum}</a></li>
-                    <li className="Links"><a className="Work">{navOptions.work}</a></li>
-                    <li className="Links"><a className="Tech">{navOptions.tech}</a></li>
+        <div className="about">
+            <nav className="pages"> 
+                <ul className="options">
+                    <li><Link to="/" className="home">{navOptions.home}</Link></li>
+                    <li><Link to="/Sum" className="sum">{navOptions.sum}</Link></li>
+                    <li><Link to="/Work" className="work">{navOptions.work}</Link></li>
+                    <li><Link to="/Tech" className="tech">{navOptions.tech}</Link></li>
                  </ul>
             </nav> 
+            <Outlet />
         </div>
          );
     }
