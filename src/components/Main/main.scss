@@ -6,4 +6,80 @@
     flex-direction: column;
     font-size: calc(10px + 2vmin);
     color: deepskyblue;
-}  
+}
+
+.duties {
+    margin-top: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.2em;
+    padding: 0;
+    display: flex; 
+    flex-direction: column;
+    font-size: .8em;
+    text-align: left;
+    border-top: medium solid whitesmoke;
+    border-bottom: medium solid whitesmoke;
+}
+.duty {
+        padding: 1.1em;
+    }
+@media screen and (max-width: 320px) {
+    .duties {
+        text-align: center;
+        list-style-type: none;
+    }
+    
+}
+
+.headers {
+    margin-top: 2.75rem;
+}
+
+.summary {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+.article {
+    border-bottom: medium solid whitesmoke;
+    border-top: medium solid whitesmoke;
+    padding: 2em;
+    line-height: 2em;
+    margin-bottom: 5rem;
+    font-size: .85em;
+
+}
+@media screen and (max-width: 410px) {
+    .article {
+        font-size: 1.1rem;
+    }
+}
+
+.experience {
+    margin-top: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.2em;
+    padding: 3rem;
+    display: flex; 
+    flex-direction: column;
+    font-size: .8em;
+    text-align: left;
+    border-top: medium solid whitesmoke;
+    border-bottom: medium solid whitesmoke;
+}
+.technologies {
+    padding-top: 1.25em;
+}
+@media screen and (max-width: 410px) {
+    .experience {
+        text-align: center;
+    list-style-type: none;
+    }
+    
+}
