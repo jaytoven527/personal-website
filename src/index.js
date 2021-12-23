@@ -1,25 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import './index.css';
-import Homepage from './App';
-import About from './components/About-me/About-me'
-import Summary, {Work, Tech} from './components/Main/main';
+import App from './App';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<Homepage />} />
-    <Route path="About" element={<About />} />
-    <Route path="Sum" element={<Summary />} />
-    <Route path="Work" element={<Work />} />
-    <Route path="Tech" element={<Tech />} />
-  </Routes>
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
 );

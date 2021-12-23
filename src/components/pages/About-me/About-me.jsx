@@ -1,7 +1,7 @@
 import './About-me.scss';
-import { outlet, Link, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
-export default function About () {
+export function About () {
     const navOptions = {
         home: "Home",
         sum: "Summary",
